@@ -1,0 +1,41 @@
+:root {
+  --main-color: #f87d09;
+  --primary-color: white;
+  --secondary-color: rgb(214 107 8 / 70%);
+  --third-color: #777;
+  --fourth-color: #000;
+  --text-color: #000;
+  --fifth-color: #eee;
+  --sixth-color: #dedadc;
+  --pricecard-color: #fcfcfc;
+  --box-shadow: rgba(0 0 2 / 35%) 0px 20px 30px -10px;
+  --light-color: #ced6e0;
+  --dark-color: #2f3542;
+  --section-color: #fff;
+  --loader-color: rgba(0 0 0 / 50%);
+  --loaderShadow-color: rgba(0 0 0 / 30%);
+}
+.darkmode {
+  --main-color: #f87d09;
+  --primary-color: white;
+  --secondary-color: rgb(214 107 8 / 70%);
+  --third-color: #e8e8e8;
+  --fourth-color: #000;
+  --text-color: #fcfcfc;
+  --fifth-color: #eee;
+  --sixth-color: #dedadc;
+  --pricecard-color: #333;
+  --box-shadow: rgba(248 125 9/ 35%) 0px 20px 30px -10px;
+  --light-color: #ced6e0;
+  --dark-color: #2f3542;
+  --section-color: #171717;
+  --shadow-color: #f87d09;
+  --loader-color: rgba(248 125 9 / 50%);
+  --loaderShadow-color: rgba(248 125 9 / 30%);
+}
+.darkmode .hidden-addres h2 span {
+  text-shadow: 4px 1.5px 6px var(--main-color);
+}
+.darkmode .services .serv-box {
+  color: var(--third-color);
+}
