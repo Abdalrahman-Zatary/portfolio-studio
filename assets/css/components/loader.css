@@ -1,0 +1,90 @@
+/* Satrt Loading */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: var(--section-color);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 1000ms ease, opacity 1000ms ease;
+  pointer-events: auto;
+}
+.hide {
+  transform: translateY(110%);
+  opacity: 0;
+  pointer-events: none;
+}
+.loader span {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  top: 20px;
+  color: var(--main-color);
+  display: inline-block;
+  font-size: 5rem;
+  text-shadow: 0 1px 0 #c14b01,
+  0 2px 0 #c14b01,
+  0 3px 0 #c14b01,
+  0 4px 0 #c14b01,
+  0 5px 0 #c14b01,
+  0 6px 0 transparent,
+  0 7px 0 transparent,
+  0 8px 0 transparent,
+  0 9px 0 transparent,
+  0 10px 10px var(--loader-color);
+  animation: bounce 0.6s ease infinite alternate;
+}
+.loader h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loader h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loader h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loader h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.loader h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loader h1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.loader h1 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.loader h1 span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #c14b01,
+    0 2px 0 #c14b01,
+    0 3px 0 #c14b01,
+    0 4px 0 #c14b01,
+    0 5px 0 #c14b01,
+    0 6px 0 #c14b01,
+    0 7px 0 #c14b01,
+    0 8px 0 #c14b01,
+    0 9px 0 #c14b01,
+    0 60px 30px var(--loaderShadow-color);
+  }
+}
+@media (max-width: 767px) {
+  .loader span {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 560px) {
+  .loader span {
+    font-size: 2rem;
+  }
+}
+/* End Loading */

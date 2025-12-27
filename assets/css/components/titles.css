@@ -1,0 +1,34 @@
+
+/* Start Components */
+.hidden-addres {
+  text-align: center;
+}
+.hidden-addres h2 {
+  font-weight: bold;
+  color: var(--main-color);
+  letter-spacing: -8px;
+  font-size: 4rem;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-box-reflect: below -26px linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+}
+.hidden-addres h2 span {
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 4px 1.5px 6px var(--fourth-color);
+  position: relative;
+}
+.hidden-addres p {
+  color: var(--third-color);
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .hidden-addres h2 {
+    font-size: 3rem;
+  }
+}
+/* End Components */
